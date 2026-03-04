@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - BloodType AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="droplet">💧</span> BloodType AI
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="detection.html">Detection</a>
+      <a href="signin.html">Sign In</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to Your Profile</h1>
+
+    <section class="profile-info">
+      <h2>Your Information</h2>
+      <p><strong>Email:</strong> <span id="userEmail"></span></p>
+      <p><strong>Last Sign In:</strong> <span id="lastLogin"></span></p>
+    </section>
+
+    <section class="submissions">
+      <h2>Past Questionnaire Submissions</h2>
+      <ul id="submissionList"></ul>
+    </section>
+
+    <button class="btn black" onclick="logout()">Log Out</button>
+  </main>
+
+  <script src="js/profile.js"></script>
+
+</body>
+</html>
